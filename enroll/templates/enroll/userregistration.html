@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration </title>
+    </head>
+<body>
+    <form action="" method="get" >
+         <!--Write hard code in HTML for name attribute 
+        <div>
+            <label for="id_name">Name:</label>
+            <input type="text" name="name" required_id="id_name">
+        </div><br>
+        The above div section can be written using DTL as shown below:
+        <div>
+            <label for="{{form.name.id_for_label}}">Name:</label>
+            This writes the text field for name attribute
+            {{form.name}}
+        </div><br>
+        Write label and input tag for name attribute
+        <div>
+            This writes <label> tag for name attribute
+            {{form.name.label_tag}}
+            This writes <input> tag for name attribute
+            {{form.name}}
+        </div><br>!-->
+        <div>
+            <i>Write the value of label tag for name attribute:</i> 
+            {{form.name.label}}<br>
+            <i>Write the value of name attribute initially assigned: </i> 
+            {{form.name.value}}<br>
+            <i>Write the value of html name in view page source: </i> 
+            {{form.name.html_name}}<br>
+            <i>Write the value of help text initially assigned for name attribute:</i> 
+            {{form.name.help_text}}<br>
+            form dot name dot field dot required: it returns True or false:
+            {{form.name.field.required}}<br>
+        </div><br>
+    </form>
+</body>
+</html>
